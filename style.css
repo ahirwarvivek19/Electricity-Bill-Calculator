@@ -1,0 +1,61 @@
+html,
+body {
+  font-family : Monospace;
+  background-color : #222;
+  color : white;
+}
+.reducedCol {
+  margin-top:10px;
+  background-color : #403D3F;
+  border : 0px #FFF solid;
+}
+
+.inp {
+  background-color : #333;
+  color : #FFF;
+  /* font-color : #FFF; */
+  border : 2px solid white;
+  transition : background-color 0.5s,border 0.5s;
+}
+.inp:focus {
+  background-color : #000;
+  outline : none !important;
+  border-color: #39FF14;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.inp:hover {
+  outline : none !important;
+  border-color: #39FF14;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.box {
+  display  : block;
+}
+.change {
+  font-size  : 3em;
+}
+
+.foot {
+  margin-top : 70px;
+}
+
+.getButton {
+  background-color : #010101 !important;
+  
+  transition : background-color 1s,border 1s;
+  color : white !important;
+}
+
+.getButton:hover {
+  border : 1.5px solid white;
+  background-color : #353535 !important;
+  color : white !important;
+}
+
+h1{
+  padding: 0%;
+  margin-bottom: 0px;
+}

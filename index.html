@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <title>Bill Calculator</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 align='center'>Bill Calculator</h1>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 reducedCol well text-left"
+                margin-top:10px>
+                <form action="#box" role="form" name="elecForm" class="form">
+
+                    <fieldset class="form-group form-inline">
+                        <label for="CurrentReading"><b>Current Reading Data</b></label><br>
+                        <label for="currDate">Date</label>
+                        <input class="form-control inp" name="currDate" type="date">
+
+                        &emsp;&emsp;&emsp;&emsp;
+
+                        <label for="currR">Current Reading</label>
+                        <input class="form-control inp" name="currR" type="number" value="" placeholder="Units in kWh">
+
+
+                    </fieldset>
+
+                    <br>
+
+
+                    <fieldset class="form-group form-inline">
+                        <label for="PreviousReading"><b>Previous Reading Data</b></label><br>
+
+                        <label for="prevDate">Date</label>
+                        <input class="form-control inp" name="prevDate" type="date">
+
+                        &emsp;&emsp;&emsp;&emsp;
+
+                        <label for="prevR">Previous Reading</label>
+                        <input class="form-control inp" name="prevR" type="" value="" placeholder="Units in kWh">
+
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset class="form-group form-inline">
+                        <label for="MainBill"><b>Main Bill Data</b></label><br>
+                        <label for="mainAmt">Amount (Main Bill)</label>
+                        <input class="form-control inp" name="mainAmt" type="" value="" placeholder="Amount in Rs.">
+
+                        &emsp;&emsp;&emsp;&emsp;
+
+                        <label for="mainUnit">Units (Main Bill)</label>
+                        <input class="form-control inp" name="mainUnit" type="" value="" placeholder="Units in kWh">
+
+                    </fieldset>
+
+                    <fieldset class="form-group text-center">
+                        <button class="btn bg-primary getButton" type="button" onClick="calcBill(this.form)">Get
+                            Bill</button>
+                    </fieldset>
+
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+                <div class="box text-responsive" id="#box">
+                    <center>
+                        <h2>Bill : </h2><span class="change" id="change"></span>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark navbar-fixed-bottom foot" style="background-color : #555;color : white">
+            <span class="navbar-brand">
+                <center>Made By Vivek</center>
+            </span>
+        </nav>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
